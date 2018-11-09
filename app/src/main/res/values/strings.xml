@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Clank! Score Tracker</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player3">Player 3</string>
+    <string name="player4">Player 4</string>
+    <string name="vPLabel">VP:</string>
+    <string name="cLabel">Clank!</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+</resources>

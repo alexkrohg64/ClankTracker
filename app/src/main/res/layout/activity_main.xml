@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/player1Label"
+        android:layout_width="448dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/player1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p1VPValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p1VPLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player1Label" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="decreaseValue"
+        android:text="@string/minus"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="increaseValue"
+        android:text="@string/plus"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minusButton" />
+
+    <ToggleButton
+        android:id="@+id/p1VPLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vPLabel"
+        android:textOff="@string/vPLabel"
+        android:textOn="@string/vPLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1Label" />
+
+    <ToggleButton
+        android:id="@+id/p1CLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cLabel"
+        android:textOff="@string/cLabel"
+        android:textOn="@string/cLabel"
+        app:layout_constraintStart_toEndOf="@+id/p1VPValue"
+        app:layout_constraintTop_toBottomOf="@+id/player1Label" />
+
+    <TextView
+        android:id="@+id/p1CValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p1CLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player1Label" />
+
+    <TextView
+        android:id="@+id/player2Label"
+        android:layout_width="448dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/player2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1VPLabel" />
+
+    <ToggleButton
+        android:id="@+id/p2VPLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vPLabel"
+        android:textOff="@string/vPLabel"
+        android:textOn="@string/vPLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2Label" />
+
+    <TextView
+        android:id="@+id/p2VPValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p2VPLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player2Label" />
+
+    <ToggleButton
+        android:id="@+id/p2CLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cLabel"
+        android:textOff="@string/cLabel"
+        android:textOn="@string/cLabel"
+        app:layout_constraintStart_toEndOf="@+id/p2VPValue"
+        app:layout_constraintTop_toBottomOf="@+id/player2Label" />
+
+    <TextView
+        android:id="@+id/p2CValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p2CLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player2Label" />
+
+    <TextView
+        android:id="@+id/player3Label"
+        android:layout_width="448dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/player3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2VPLabel" />
+
+    <ToggleButton
+        android:id="@+id/p3VPLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vPLabel"
+        android:textOff="@string/vPLabel"
+        android:textOn="@string/vPLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player3Label" />
+
+    <TextView
+        android:id="@+id/p3VPValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p3VPLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player3Label" />
+
+    <ToggleButton
+        android:id="@+id/p3CLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cLabel"
+        android:textOff="@string/cLabel"
+        android:textOn="@string/cLabel"
+        app:layout_constraintStart_toEndOf="@+id/p3VPValue"
+        app:layout_constraintTop_toBottomOf="@+id/player3Label" />
+
+    <TextView
+        android:id="@+id/p3CValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p3CLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player3Label" />
+
+    <TextView
+        android:id="@+id/player4Label"
+        android:layout_width="448dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/player4"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p3VPLabel" />
+
+    <ToggleButton
+        android:id="@+id/p4VPLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vPLabel"
+        android:textOff="@string/vPLabel"
+        android:textOn="@string/vPLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player4Label" />
+
+    <TextView
+        android:id="@+id/p4VPValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p4VPLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player4Label" />
+
+    <ToggleButton
+        android:id="@+id/p4CLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cLabel"
+        android:textOff="@string/cLabel"
+        android:textOn="@string/cLabel"
+        app:layout_constraintStart_toEndOf="@+id/p4VPValue"
+        app:layout_constraintTop_toBottomOf="@+id/player4Label" />
+
+    <TextView
+        android:id="@+id/p4CValue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/p4CLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player4Label" />
+
+</android.support.constraint.ConstraintLayout>
